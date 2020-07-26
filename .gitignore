@@ -21,3 +21,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.DS_store
+build/
+target/
+bin/
+.gradle/
+.dropbox
+Icon
+*~
+Thumbs.db
+Thumbs.db:encryptable
+
