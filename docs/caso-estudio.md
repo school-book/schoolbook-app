@@ -10,8 +10,9 @@
 * En el detalle del contrato también se especifica la lista de bibliotecas que serán administradas por  SchoolBook.  Para cada biblioteca se registra la siguiente información:  Nombre, dirección,  ubicación geográfica (latitud, longitud), dirección de su página web,  teléfonos de contacto, número aproximado de ejemplares que maneja,  número aproximado de usuarios que maneja.
 * Con base en estos datos, en el contrato se especifica la cuota mensual que la escuela deberá pagar para cada una de las bibliotecas.   Una  vez que el contrato es firmado, se obtiene una copia en formato PDF el cual se almacena en base de datos.
 * La escuela puede renovar su contrato las veces que así lo desee. En realidad renovar un contrato significa generar uno nuevo con las mismas condiciones y asociarlo con el contrato anterior. La cuota mensual puede cambiar al renovar.
-* Para realizar los pagos mensuales, la escuela puede proporcionar varios números de tarjeta de crédito, puede ser inclusive a nivel de biblioteca. Se registra el número de tarjeta, su tipo, mes y año de expiración y número de seguridad.
-* Cada vez que se realiza un cobro a la tarjeta se guarda el importe, la fecha del cobro y el número de operación que genera el banco.
+* Para realizar los pagos mensuales, la escuela puede proporcionar varios números de tarjeta de crédito. Se registra el número de tarjeta, su tipo, mes y año de expiración y número de seguridad.
+* Para realizar los pagos, a cada biblioteca se le asigna una de las tarjetas de crédito registradas por parte de la escuela.
+* Cada vez que se realiza un cargo a una tarjeta se guarda el importe, la fecha del cobro y el número de operación que genera el banco.
 * Para llevar el control de las bibliotecas se cuenta con los siguientes estados:
 
 Status   | Descripción
@@ -30,7 +31,7 @@ CON CONTRATO VENCIDO | El contrato de la escuela asociado a vencido. En caso de 
 * Para los libros físicos se almacena el número total de ejemplares existentes, el número total de ejemplares que se encuentran ubicados en bibliotecas, el número total de ejemplares que se encuentran el almacén, el número total de libros vendidos en librerías, y el número total de libros que se consideran como perdidos, ya sea por robo, maltrato, o pérdida por alguna razón.
 * Para los libros digitales se almacena su URL donde puede ser consultado y el número de archivos que contiene el contenido del  libro. 
 * Cada libro digital se almacena en varios archivos. Se almacena el archivo,  su número iniciando en 1 por cada libro, el rango de páginas que contiene cada archivo, nombre del archivo, formato y tamaño en bytes.
-* Algunos libros digitales incluyen material multimedia, archivos de audio y/o archivos de vídeo.  Para cada archivo se registra un número de archivo,  su tipo (vídeo, audio, etc.), su formato y una descripción.
+* Algunos libros digitales incluyen material multimedia, archivos de audio y/o archivos de vídeo.  Para cada archivo se registra un número de archivo,  su tipo (vídeo, audio, etc.), su formato (mp3, mp4, etc.),  y una descripción.
 * Independiente al tipo de libro se almacenan los siguientes datos que permiten facilitar su búsqueda:
 	* Imagen que representa a la portada
 	* Imagen que representa a la contra portada
