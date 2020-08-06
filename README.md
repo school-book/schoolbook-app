@@ -27,4 +27,4 @@
 	* Servicio encargado de la administración de préstamos y ejemplares.
 	* Servicio encargado de administrar las  ordenes de compra de libros.
 ## Código fuente
-* El código fuente del proyecto se distribuye en diversos repositorios los cuales se pueden consultar [en este enlace.]([https://github.com/school-book/](https://github.com/school-book/)) 
+* El código fuente del proyecto se distribuye en diversos repositorios los cuales se pueden consultar [aquí](https://github.com/school-book).
